@@ -1,0 +1,38 @@
+:root {
+  --header-border-color: #dadce0;
+  --link-color: #5f6368;
+  --input-color: #f1f3f4;
+  --header-link-color:#1769e0; }
+
+* {
+  font-family: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+  border: none;
+  outline: none; }
+
+.header-border {
+  border-bottom: 1px solid var(--header-border-color); }
+
+header a {
+  color: var(--link-color);
+  font: 500 14px/24px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif; }
+
+header form {
+  display: flex;
+  color: var(--link-color); }
+
+.input-class {
+  background: var(--input-color);
+  border: 0; }
+
+.input-class[placeholder] {
+  padding-left: 3rem;
+  font: 500 14px/24px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+  border-radius: 3px; }
+
+.buttons {
+  font-family: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+  color: var(--link-color); }
+
+#second-links * {
+  color: var(--header-link-color);
+  font: 500 14px/36px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif; }
