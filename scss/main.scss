@@ -1,8 +1,88 @@
+@font-face {
+    font-family: euclid circular a;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A Regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: italic;
+    font-weight: 400;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A Italic.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: italic;
+    font-weight: 300;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light Italic.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: normal;
+    font-weight: 500;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: italic;
+    font-weight: 500;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium Italic.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: normal;
+    font-weight: 600;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: italic;
+    font-weight: 600;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold Italic.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: euclid circular a;
+    font-style: italic;
+    font-weight: 700;
+    src: local('Euclid Circular A'), url('https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold Italic.woff') format('woff')
+}
+
 :root {
     --header-border-color: #dadce0;
     --link-color: #5f6368;
     --input-color: #f1f3f4;
-    --header-link-color:#1769e0;
+    --header-link-color: #1769e0;
+    --first-section-bg: #073042;
+    --header-bg: #fff;
+    --section-font: 500 14px/24px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+    --box-color: #d7effe;
+    --box-shadow: 0 14px 25px 0 rgba(60, 64, 67, .08), 0 4px 13px 0 rgba(60, 64, 67, .12);
+    --font: 'Euclid Circular A';
+    --paragraph-font: Roboto;
+    --second-div-bg: #d7effe;
+    --second-div-color: #3c4043;
+    --different-bg: #f8f9fa;
 }
 
 * {
@@ -11,14 +91,17 @@
     outline: none;
 }
 
+
+
 .header-border {
 
     border-bottom: 1px solid var(--header-border-color);
+    background: var(--header-bg);
 }
 
 header a {
     color: var(--link-color);
-    font: 500 14px/24px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+    font: var(--section-font);
 }
 
 header form {
@@ -31,13 +114,13 @@ header form {
     border: 0;
 }
 
-.input-class[placeholder]{
+.input-class[placeholder] {
     padding-left: 3rem;
-    font: 500 14px/24px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+    font: var(--section-font);
     border-radius: 3px;
 }
 
-.buttons{
+.buttons {
     font-family: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
     color: var(--link-color);
 }
@@ -45,4 +128,108 @@ header form {
 #second-links * {
     color: var(--header-link-color);
     font: 500 14px/36px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+
+}
+
+.slider {
+    background: var(--first-section-bg);
+    height: 33rem;
+    color: #fff;
+    font-family: var(--font);
+}
+
+.slider * h1 {
+
+    line-height: 72px;
+}
+
+.slider p {
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.section-form {
+    color: var(--link-color);
+}
+
+.box-main-container {
+    transition: .2s ease-out;
+    opacity: 1;
+    gap: 1rem;
+    font-family: var(--font);
+
+    .box {
+        background: var(--box-color);
+        transition: .2s ease-out;
+        opacity: 1;
+
+        &:hover {
+            box-shadow: var(--box-shadow);
+            transition: .2s ease-out;
+        }
+    }
+
+    .box-icons {
+        color: #073042;
+    }
+
+}
+
+.uppercase-div {
+    font-family: var(--font);
+    background: var(--first-section-bg);
+    color: var(--header-bg);
+    transition: .2s ease-out;
+
+    &:hover {
+        box-shadow: var(--box-shadow);
+    }
+
+    &:hover .button-div {
+
+        transition: .2s ease-out;
+        background: var(--header-bg);
+        color: var(--first-section-bg);
+    }
+
+
+    .uppercase-content {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    p {
+        font-family: var(--paragraph-font);
+    }
+
+    .button-div {
+        border: 2px solid var(--header-bg);
+        color: var(--header-bg);
+        padding: 1rem;
+        transition: .2s ease-out;
+
+    }
+}
+
+.change-div {
+    background: var(--second-div-bg);
+    color: var(--second-div-color);
+    height: 100%;
+
+    .second-div-color {
+        color: var(--first-section-bg);
+        border: 2px solid var(--first-section-bg);
+    }
+
+    &:hover .button-div {
+        transition: .2s ease-out;
+        background: var(--header-bg);
+        color: var(--first-section-bg);
+        border: 2px solid var(--header-bg);
+    }
+
+}
+
+.different-color {
+    background: var(--different-bg);
 }
