@@ -2,61 +2,71 @@
   font-family: euclid circular a;
   font-style: normal;
   font-weight: 400;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Regular.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Regular.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: italic;
   font-weight: 400;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Italic.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Italic.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: normal;
   font-weight: 300;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: italic;
   font-weight: 300;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light Italic.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Light Italic.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: normal;
   font-weight: 500;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: italic;
   font-weight: 500;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium Italic.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Medium Italic.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: normal;
   font-weight: 600;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: italic;
   font-weight: 600;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold Italic.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A SemiBold Italic.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: normal;
   font-weight: 700;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold.woff") format("woff");
+}
 
 @font-face {
   font-family: euclid circular a;
   font-style: italic;
   font-weight: 700;
-  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold Italic.woff") format("woff"); }
+  src: local("Euclid Circular A"), url("https://fonts.cdnfonts.com/s/60248/Euclid Circular A Bold Italic.woff") format("woff");
+}
 
 :root {
   --header-border-color: #dadce0;
@@ -74,112 +84,217 @@
   --second-div-color: #3c4043;
   --different-bg: #f8f9fa;
   --buttons-border: 1px solid #e8eaed;
-  --button-radius: 0.125rem; }
+  --button-radius: 0.125rem;
+  --transition: .2s ease-out;
+  --important-font: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+  --button-color: #3ddc84;
+  --button-hover: #eff7cf;
+}
 
 * {
   font-family: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
   border: none;
-  outline: none; }
+  outline: none;
+}
 
 .header-border {
   border-bottom: 1px solid var(--header-border-color);
-  background: var(--header-bg); }
+  background: var(--header-bg);
+}
 
 header a {
   color: var(--link-color);
-  font: var(--section-font); }
+  font: var(--section-font);
+}
 
 header form {
   display: flex;
-  color: var(--link-color); }
+  color: var(--link-color);
+}
 
 .input-class {
   background: var(--input-color);
-  border: 0; }
+  border: 0;
+}
 
 .input-class[placeholder] {
   padding-left: 3rem;
   font: var(--section-font);
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 .buttons {
   font-family: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
   color: var(--link-color);
   border: var(--buttons-border);
   border-radius: var(--button-radius);
-  transition: 0.2s ease 0s; }
-  .buttons:hover {
-    background: var(--input-color); }
+  transition: 0.2s ease 0s;
+}
+
+.buttons:hover {
+  background: var(--input-color);
+}
 
 #second-links * {
   color: var(--header-link-color);
-  font: 500 14px/36px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif; }
+  font: 500 14px/36px Android Euclid, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+}
 
 .slider {
   background: var(--first-section-bg);
   height: 33rem;
   color: #fff;
-  font-family: var(--font); }
+  font-family: var(--font);
+}
 
 .slider * h1 {
-  line-height: 72px; }
+  line-height: 72px;
+}
 
 .slider p {
   line-height: 1.5;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
 .section-form {
-  color: var(--link-color); }
+  color: var(--link-color);
+}
 
 .box-main-container {
-  transition: .2s ease-out;
+  transition: var(--transition);
   opacity: 1;
   gap: 1rem;
-  font-family: var(--font); }
-  .box-main-container .box {
-    background: var(--box-color);
-    transition: .2s ease-out;
-    opacity: 1; }
-    .box-main-container .box:hover {
-      box-shadow: var(--box-shadow);
-      transition: .2s ease-out; }
-  .box-main-container .box-icons {
-    color: #073042; }
+  font-family: var(--font);
+}
+
+.box-main-container .box {
+  background: var(--box-color);
+  transition: var(--transition);
+  opacity: 1;
+}
+
+.box-main-container .box:hover {
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.box-main-container .box-icons {
+  color: #073042;
+}
 
 .uppercase-div {
   font-family: var(--font);
   background: var(--first-section-bg);
   color: var(--header-bg);
-  transition: .2s ease-out; }
-  .uppercase-div:hover {
-    box-shadow: var(--box-shadow); }
-  .uppercase-div:hover .button-div {
-    transition: .2s ease-out;
-    background: var(--header-bg);
-    color: var(--first-section-bg); }
-  .uppercase-div .uppercase-content {
-    font-size: 2rem;
-    line-height: 40px; }
-  .uppercase-div p {
-    font-family: var(--paragraph-font); }
-  .uppercase-div .button-div {
-    border: 2px solid var(--header-bg);
-    color: var(--header-bg);
-    padding: 1rem;
-    transition: .2s ease-out; }
+  transition: var(--transition);
+}
+
+.uppercase-div:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.uppercase-div:hover .button-div {
+  transition: var(--transition);
+  background: var(--header-bg);
+  color: var(--first-section-bg);
+}
+
+.uppercase-div .uppercase-content {
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+.uppercase-div p {
+  font-family: var(--paragraph-font);
+  line-height: 1.5rem;
+}
+
+.uppercase-div .button-div {
+  border: 2px solid var(--header-bg);
+  color: var(--header-bg);
+  padding: 1rem;
+  transition: var(--transition);
+}
 
 .change-div {
   background: var(--second-div-bg);
   color: var(--second-div-color);
-  height: 100%; }
-  .change-div .second-div-color {
-    color: var(--first-section-bg);
-    border: 2px solid var(--first-section-bg); }
-  .change-div:hover .button-div {
-    transition: .2s ease-out;
-    background: var(--header-bg);
-    color: var(--first-section-bg);
-    border: 2px solid var(--header-bg); }
+  height: 100%;
+}
 
-.different-color {
-  background: var(--different-bg); }
+.change-div .second-div-color {
+  color: var(--first-section-bg);
+  border: 2px solid var(--first-section-bg);
+}
+
+.change-div:hover .button-div {
+  transition: var(--transition);
+  background: var(--header-bg);
+  color: var(--first-section-bg);
+  border: 2px solid var(--header-bg);
+}
+
+.different-bg-section {
+  background: var(--different-bg);
+  color: var(--second-div-color);
+  font-family: var(--font);
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.different-bg-section p {
+  font-family: var(--important-font);
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.different-bg-section .section-buttons {
+  background: var(--button-color);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.different-bg-section .font-p {
+  font-family: var(--font);
+}
+
+.different-bg-section h3 {
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+.different-bg-section .special-font {
+  font-size: 0.875rem;
+}
+
+.different-bg-section .section-buttons:hover {
+  background: var(--button-hover);
+}
+
+.different-bg-section .blog-title:hover {
+  color: var(--header-link-color);
+  cursor: pointer;
+}
+
+#explore {
+  font-family: var(--font);
+}
+
+#explore .explore-box {
+  background: var(--first-section-bg);
+  transition: var(--transition);
+  color: var(--second-div-bg);
+  padding: 3.125rem;
+  height: 420px;
+}
+
+#explore .explore-box:hover {
+  box-shadow: var(--box-shadow);
+  color: var(--header-bg);
+}
+
+#explore .explore-box p {
+  font-family: var(--important-font);
+  line-height: 1.6rem;
+  color: var(--header-bg);
+}

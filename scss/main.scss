@@ -85,6 +85,10 @@
     --different-bg: #f8f9fa;
     --buttons-border: 1px solid #e8eaed;
     --button-radius: 0.125rem;
+    --transition: .2s ease-out;
+    --important-font: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+    --button-color: #3ddc84;
+    --button-hover: #eff7cf;
 }
 
 * {
@@ -127,7 +131,7 @@ header form {
     color: var(--link-color);
     border: var(--buttons-border);
     border-radius: var(--button-radius);
-    transition:  0.2s ease 0s;
+    transition: 0.2s ease 0s;
 
     &:hover {
         background: var(--input-color);
@@ -162,19 +166,19 @@ header form {
 }
 
 .box-main-container {
-    transition: .2s ease-out;
+    transition: var(--transition);
     opacity: 1;
     gap: 1rem;
     font-family: var(--font);
 
     .box {
         background: var(--box-color);
-        transition: .2s ease-out;
+        transition: var(--transition);
         opacity: 1;
 
         &:hover {
             box-shadow: var(--box-shadow);
-            transition: .2s ease-out;
+            transition: var(--transition);
         }
     }
 
@@ -188,7 +192,7 @@ header form {
     font-family: var(--font);
     background: var(--first-section-bg);
     color: var(--header-bg);
-    transition: .2s ease-out;
+    transition: var(--transition);
 
     &:hover {
         box-shadow: var(--box-shadow);
@@ -196,7 +200,7 @@ header form {
 
     &:hover .button-div {
 
-        transition: .2s ease-out;
+        transition: var(--transition);
         background: var(--header-bg);
         color: var(--first-section-bg);
     }
@@ -209,13 +213,14 @@ header form {
 
     p {
         font-family: var(--paragraph-font);
+        line-height: 1.5rem;
     }
 
     .button-div {
         border: 2px solid var(--header-bg);
         color: var(--header-bg);
         padding: 1rem;
-        transition: .2s ease-out;
+        transition: var(--transition);
 
     }
 }
@@ -231,7 +236,7 @@ header form {
     }
 
     &:hover .button-div {
-        transition: .2s ease-out;
+        transition: var(--transition);
         background: var(--header-bg);
         color: var(--first-section-bg);
         border: 2px solid var(--header-bg);
@@ -239,6 +244,72 @@ header form {
 
 }
 
-.different-color {
+.different-bg-section {
     background: var(--different-bg);
+    color: var(--second-div-color);
+    font-family: var(--font);
+    font-size: 40px;
+    line-height: 48px;
+
+    p {
+        font-family: var(--important-font);
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .section-buttons {
+        background: var(--button-color);
+        font-size: 1rem;
+        transition: var(--transition);
+
+    }
+
+    .font-p {
+        font-family: var(--font);
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .special-font {
+        font-size: 0.875rem;
+    }
+
+    .section-buttons:hover {
+        background: var(--button-hover);
+    }
+
+    .blog-title:hover {
+        color: var(--header-link-color);
+        cursor: pointer;
+    }
+
+}
+
+#explore {
+    font-family: var(--font);
+
+    .explore-box{
+        background: var(--first-section-bg);
+        transition: var(--transition);
+        color: var(--second-div-bg);
+        padding: 3.125rem;
+        height: 420px;
+
+
+        &:hover{
+            box-shadow: var(--box-shadow);
+            color: var(--header-bg);
+        }
+
+        p{
+            font-family: var(--important-font);
+            line-height: 1.6rem;
+            color: var(--header-bg);
+        }
+
+    }
+
 }
