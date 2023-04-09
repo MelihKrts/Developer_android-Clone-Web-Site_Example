@@ -83,6 +83,8 @@
     --second-div-bg: #d7effe;
     --second-div-color: #3c4043;
     --different-bg: #f8f9fa;
+    --buttons-border: 1px solid #e8eaed;
+    --button-radius: 0.125rem;
 }
 
 * {
@@ -123,6 +125,13 @@ header form {
 .buttons {
     font-family: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
     color: var(--link-color);
+    border: var(--buttons-border);
+    border-radius: var(--button-radius);
+    transition:  0.2s ease 0s;
+
+    &:hover {
+        background: var(--input-color);
+    }
 }
 
 #second-links * {
