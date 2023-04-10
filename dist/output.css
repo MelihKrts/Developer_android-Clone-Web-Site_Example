@@ -589,8 +589,22 @@ video {
   margin-bottom: auto;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .mb-16 {
@@ -607,6 +621,10 @@ video {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .ml-auto {
@@ -629,12 +647,8 @@ video {
   margin-top: 2rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .block {
@@ -653,8 +667,16 @@ video {
   height: 3rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-20 {
   height: 5rem;
+}
+
+.h-56 {
+  height: 14rem;
 }
 
 .h-8 {
@@ -673,14 +695,6 @@ video {
   height: 100%;
 }
 
-.h-56 {
-  height: 14rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -693,6 +707,18 @@ video {
   width: 25%;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -703,6 +729,10 @@ video {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-6\/12 {
+  width: 50%;
 }
 
 .w-7\/12 {
@@ -729,40 +759,16 @@ video {
   width: 74%;
 }
 
+.w-\[77\%\] {
+  width: 77%;
+}
+
 .w-\[95\%\] {
   width: 95%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-5\/6 {
-  width: 83.333333%;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-14 {
-  width: 3.5rem;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
-}
-
-.w-\[77\%\] {
-  width: 77%;
-}
-
-.w-2\/12 {
-  width: 16.666667%;
 }
 
 .flex-row {
@@ -797,6 +803,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
 }
@@ -811,6 +821,11 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.bg-teal-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 212 191 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/img\/billboard-bg\.png\'\)\] {
@@ -839,6 +854,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -863,12 +882,8 @@ video {
   padding-top: 0.75rem;
 }
 
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-4xl {

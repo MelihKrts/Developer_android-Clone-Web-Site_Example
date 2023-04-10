@@ -90,6 +90,7 @@
     --button-color: #3ddc84;
     --button-hover: #eff7cf;
     --social-media-border: 1px solid #dadce0;
+    --penultimate-color: #202124;
 }
 
 * {
@@ -262,7 +263,6 @@ header form {
         background: var(--button-color);
         font-size: 1rem;
         transition: var(--transition);
-
     }
 
     .font-p {
@@ -343,4 +343,65 @@ header form {
     font-family: var(--important-font);
     border-bottom: var(--social-media-border);
     border-top: var(--social-media-border);
+}
+
+#footer-link {
+    font-family: var(--font);
+    border-bottom: var(--social-media-border);
+
+    h3 {
+        letter-spacing: 1.5px;
+        color: var(--link-color);
+        text-transform: uppercase;
+    }
+
+    span {
+        color: #202124;
+    }
+
+    li {
+        padding: 0.8rem 0;
+    }
+
+    li:first-child {
+        padding-top: 2rem;
+    }
+
+}
+
+#penultimate {
+    font-family: var(--important-font);
+    color: var(--penultimate-color);
+    border-bottom: var(--social-media-border);
+}
+
+#last-div {
+
+    font-family: var(--important-font);
+
+    li::after {
+        content: '|';
+        padding-left: 1rem;
+    }
+
+    li:last-child {
+        padding-left: 1rem;
+
+        &:last-child:after {
+            display: none;
+        }
+
+    }
+
+    .last-div-buttons{
+       background: var(--button-color); 
+       font-family: var(--font);
+       transition: var(--transition);
+
+       &:hover{
+        background: var(--button-hover);
+       }
+
+    }
+
 }
