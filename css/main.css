@@ -89,6 +89,7 @@
   --important-font: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
   --button-color: #3ddc84;
   --button-hover: #eff7cf;
+  --social-media-border: 1px solid #dadce0;
 }
 
 * {
@@ -263,6 +264,11 @@ header form {
   line-height: 40px;
 }
 
+.different-bg-section .section-list {
+  font-size: 2rem;
+  line-height: inherit;
+}
+
 .different-bg-section .special-font {
   font-size: 0.875rem;
 }
@@ -297,4 +303,28 @@ header form {
   font-family: var(--important-font);
   line-height: 1.6rem;
   color: var(--header-bg);
+}
+
+#explore .communitiy-box {
+  background: var(--button-hover);
+  transition: var(--transition);
+}
+
+#explore .communitiy-box:hover {
+  box-shadow: var(--box-shadow);
+}
+
+#explore .communitiy-box p {
+  font-family: var(--important-font);
+  line-height: 1.7rem;
+}
+
+#explore .communitiy-box span {
+  color: var(--header-link-color);
+}
+
+#social-media {
+  font-family: var(--important-font);
+  border-bottom: var(--social-media-border);
+  border-top: var(--social-media-border);
 }

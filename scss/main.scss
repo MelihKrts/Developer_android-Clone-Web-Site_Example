@@ -89,6 +89,7 @@
     --important-font: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
     --button-color: #3ddc84;
     --button-hover: #eff7cf;
+    --social-media-border: 1px solid #dadce0;
 }
 
 * {
@@ -273,6 +274,11 @@ header form {
         line-height: 40px;
     }
 
+    .section-list {
+        font-size: 2rem;
+        line-height: inherit;
+    }
+
     .special-font {
         font-size: 0.875rem;
     }
@@ -291,7 +297,7 @@ header form {
 #explore {
     font-family: var(--font);
 
-    .explore-box{
+    .explore-box {
         background: var(--first-section-bg);
         transition: var(--transition);
         color: var(--second-div-bg);
@@ -299,12 +305,12 @@ header form {
         height: 420px;
 
 
-        &:hover{
+        &:hover {
             box-shadow: var(--box-shadow);
             color: var(--header-bg);
         }
 
-        p{
+        p {
             font-family: var(--important-font);
             line-height: 1.6rem;
             color: var(--header-bg);
@@ -312,4 +318,29 @@ header form {
 
     }
 
+    .communitiy-box {
+        background: var(--button-hover);
+        transition: var(--transition);
+
+        &:hover {
+            box-shadow: var(--box-shadow);
+        }
+
+        p {
+            font-family: var(--important-font);
+            line-height: 1.7rem;
+        }
+
+        span {
+            color: var(--header-link-color);
+        }
+
+    }
+
+}
+
+#social-media {
+    font-family: var(--important-font);
+    border-bottom: var(--social-media-border);
+    border-top: var(--social-media-border);
 }
