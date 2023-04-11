@@ -283,3 +283,15 @@ header form {
     transition: var(--transition); }
     #last-div .last-div-buttons:hover {
       background: var(--button-hover); }
+
+@media (min-width: 475px) {
+  #explore .explore-box {
+    height: max-content; } }
+
+@media (min-width: 640px) {
+  #explore .explore-box {
+    height: 250px; } }
+
+@media (min-width: 724px) {
+  #explore .explore-box {
+    height: 420px; } }
