@@ -942,6 +942,11 @@ video {
     margin-bottom: 1rem;
   }
 
+  .xs\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .xs\:mb-4 {
     margin-bottom: 1rem;
   }
